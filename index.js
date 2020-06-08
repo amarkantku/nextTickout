@@ -9,3 +9,20 @@ Array.prototype.nextTickout = function(interval) {
 };
 
 [1, 2, 3, 4, , , , 5].filter(Boolean).nextTickout(1000);
+
+
+
+function nextTick (delay) {
+  let i = 1;
+  (function loop(){
+    console.log(i);
+    if(++i) {
+      if(i>50) {
+        i =1;
+      }
+      setTimeout(loop, delay);
+    }
+  })();
+} 
+
+nextTick(1000);
