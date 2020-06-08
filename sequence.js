@@ -21,3 +21,10 @@ for (var i = 0; i < 3; i++) {
 }
 
 
+for (var i = 0; i < 3; i++) {
+  setTimeout(function(j) { 
+  	console.log(j);
+    }(i), 1000);
+}
+
+
