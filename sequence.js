@@ -27,4 +27,11 @@ for (var i = 0; i < 3; i++) {
     }(i), 1000);
 }
 
+// tested
+for (var i = 0; i < 3; i++) {
+  setTimeout((j) => {
+    console.log(j);
+  }, (i + 1) * 1000, i);
+}
+
 
